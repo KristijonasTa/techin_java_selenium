@@ -25,7 +25,7 @@ public class BaseTest {
 
     @BeforeEach
     void setup() {
-        driver = launchBrowser("chrome");
+        driver = launchBrowser("ie");
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/");
     }

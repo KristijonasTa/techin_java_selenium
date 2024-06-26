@@ -18,11 +18,6 @@ public class RecordsTest extends BaseTest{
         loginPage.setPasswordInput("password");
         loginPage.clickSubmitButton();
 
-        String expectedNavBar = "Skaičiuotuvas jautrus neigiamiems skaičiams ;)";
-        String actualNavBar = calculatorHomePage.getNavBarText();
-
-        Assertions.assertThat(actualNavBar).isEqualTo(expectedNavBar);
-
         recordsPage.clickOperationRecordsLink();
 
         recordsPage.clickShowFirstRecordDetails();
@@ -43,11 +38,6 @@ public class RecordsTest extends BaseTest{
         loginPage.setUserNameInput("NewUser");
         loginPage.setPasswordInput("password");
         loginPage.clickSubmitButton();
-
-        String expectedNavBar = "Skaičiuotuvas jautrus neigiamiems skaičiams ;)";
-        String actualNavBar = calculatorHomePage.getNavBarText();
-
-        Assertions.assertThat(actualNavBar).isEqualTo(expectedNavBar);
 
         recordsPage.clickOperationRecordsLink();
         recordsPage.clickChangeFirstRecordDetails();

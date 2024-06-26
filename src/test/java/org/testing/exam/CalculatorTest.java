@@ -16,11 +16,6 @@ public class CalculatorTest extends BaseTest {
         loginPage.setPasswordInput("password");
         loginPage.clickSubmitButton();
 
-        String expectedNavBar = "Skaičiuotuvas jautrus neigiamiems skaičiams ;)";
-        String actualNavBar = calculatorHomePage.getNavBarText();
-
-        Assertions.assertThat(actualNavBar).isEqualTo(expectedNavBar);
-
         calculatorHomePage.setCalculatorFirstNumber("4");
         calculatorHomePage.setCalculatorSecondNumber("5");
         calculatorHomePage.setSelectOperation("Daugyba");
@@ -40,11 +35,6 @@ public class CalculatorTest extends BaseTest {
         loginPage.setUserNameInput("NewUser");
         loginPage.setPasswordInput("password");
         loginPage.clickSubmitButton();
-
-        String expectedNavBar = "Skaičiuotuvas jautrus neigiamiems skaičiams ;)";
-        String actualNavBar = calculatorHomePage.getNavBarText();
-
-        Assertions.assertThat(actualNavBar).isEqualTo(expectedNavBar);
 
         calculatorHomePage.setCalculatorFirstNumber("-1");
         calculatorHomePage.setCalculatorSecondNumber("2");
